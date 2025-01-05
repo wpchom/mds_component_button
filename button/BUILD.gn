@@ -1,0 +1,14 @@
+pkggroup("mds_kernel") {
+}
+
+config("mds_component_button_config") {
+  include_dirs = [ "./" ]
+}
+
+source_set("mds_component_button") {
+  sources = [ "mds_button.c" ]
+
+  public_configs = [ ":mds_comp_button_config" ]
+
+  public_deps = [ ":mds_kernel" ]
+}
