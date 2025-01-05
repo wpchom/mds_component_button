@@ -8,7 +8,7 @@ config("mds_component_button_config") {
 static_library("mds_component_button") {
   sources = [ "src/mds_button.c" ]
 
-  public_configs = [ ":mds_comp_button_config" ]
+  public_configs = [ ":mds_component_button_config" ]
 
   public_deps = [ ":mds_kernel" ]
 }
